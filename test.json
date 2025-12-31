@@ -1,0 +1,82 @@
+[
+	{
+		"$id": 0,
+		"description": 335,
+		"hide": false,
+		"name": "体能",
+		"type": 1,
+		"var": "physique"
+	},
+	{
+		"$id": 1,
+		"description": null,
+		"hide": false,
+		"name": "智慧",
+		"type": 1,
+		"var": "wisdom"
+	},
+	{
+		"$id": 2,
+		"description": null,
+		"hide": false,
+		"name": "魅力",
+		"type": 1,
+		"var": "charisma"
+	},
+	{
+		"$id": 3,
+		"description": null,
+		"hide": false,
+		"name": "韧性",
+		"type": 1,
+		"var": "reslience"
+	},
+	{
+		"$id": 4,
+		"description": null,
+		"hide": false,
+		"name": "洞察",
+		"type": 1,
+		"var": "insight"
+	},
+	{
+		"$id": 5,
+		"description": null,
+		"hide": true,
+		"name": "幸运",
+		"type": 1,
+		"var": "luck"
+	},
+	{
+		"$id": 6,
+		"description": null,
+		"hide": false,
+		"name": "天赋",
+		"type": 2,
+		"var": "unit_talent"
+	},
+	{
+		"$id": 7,
+		"description": null,
+		"hide": false,
+		"name": "勤奋",
+		"type": 2,
+		"var": "unit_diligent"
+	},
+	{
+		"$id": 8,
+		"description": null,
+		"hide": false,
+		"name": "运势",
+		"type": 2,
+		"var": "unit_luck"
+	},
+	{
+		"$id": 9,
+		"description": null,
+		"hide": true,
+		"name": "???",
+		"type": 0,
+		"var": "???"
+	}
+]

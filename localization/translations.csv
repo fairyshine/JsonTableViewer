@@ -1,0 +1,14 @@
+keys,en,zh_CN
+OPEN_FILE,Open File,打开文件
+SAVE_CHANGES,Save Changes,保存更改
+ADD_ROW,Add Row,添加行
+NO_FILE_SELECTED,No file selected,未选择文件
+OPEN_JSON_FILE,Open JSON File,打开 JSON 文件
+SAVE_JSON_FILE,Save JSON File,保存 JSON 文件
+JSON_PARSE_ERROR,JSON Parse Error,JSON 解析错误
+ROOT_MUST_BE_ARRAY,JSON root must be an Array,JSON 根节点必须是列表
+ITEMS_MUST_BE_DICT,List items must be Dictionaries,列表项必须是字典
+FILE_SAVED,File saved,文件已保存
+JSON_FILES,JSON Files,JSON 文件
+CONFIRM,Confirm,确认
+CANCEL,Cancel,取消

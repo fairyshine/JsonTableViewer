@@ -1,0 +1,8 @@
+# Godot-specific ignores
+.godot/
+
+# Web-specific ignores
+web/
+
+# OS-specific ignores
+.DS_Store

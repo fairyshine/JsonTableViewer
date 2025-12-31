@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8n6n8n6n8n6n"]
+
+[ext_resource type="Script" uid="uid://cxrrli3ko02kc" path="res://scripts/main.gd" id="1_script"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_script")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Toolbar" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="OpenBtn" type="Button" parent="VBox/Toolbar"]
+layout_mode = 2
+text = "OPEN_FILE"
+
+[node name="SaveBtn" type="Button" parent="VBox/Toolbar"]
+layout_mode = 2
+text = "SAVE_CHANGES"
+
+[node name="AddBtn" type="Button" parent="VBox/Toolbar"]
+layout_mode = 2
+text = "ADD_ROW"
+
+[node name="PathLabel" type="Label" parent="VBox/Toolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "NO_FILE_SELECTED"
+clip_text = true
+
+[node name="Tree" type="Tree" parent="VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+column_titles_visible = true
+hide_root = true
+select_mode = 1
+
+[node name="OpenDialog" type="FileDialog" parent="."]
+title = "OPEN_JSON_FILE"
+size = Vector2i(800, 500)
+ok_button_text = "CONFIRM"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.json ; JSON_FILES")
+
+[node name="SaveDialog" type="FileDialog" parent="."]
+title = "SAVE_JSON_FILE"
+size = Vector2i(800, 500)
+ok_button_text = "CONFIRM"
+access = 2
+filters = PackedStringArray("*.json ; JSON_FILES")
+
+[connection signal="pressed" from="VBox/Toolbar/OpenBtn" to="." method="_on_open_btn_pressed"]
+[connection signal="pressed" from="VBox/Toolbar/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="VBox/Toolbar/AddBtn" to="." method="_on_add_btn_pressed"]
+[connection signal="item_edited" from="VBox/Tree" to="." method="_on_tree_item_edited"]
+[connection signal="file_selected" from="OpenDialog" to="." method="_on_open_dialog_file_selected"]
+[connection signal="file_selected" from="SaveDialog" to="." method="_on_save_dialog_file_selected"]
